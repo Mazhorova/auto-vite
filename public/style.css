@@ -45,6 +45,7 @@ header {
   color: black;
   padding: 10px;
   transition: 0.5s;
+  margin: 25px;
 }
 
 .academy:hover {
@@ -80,10 +81,6 @@ nav ul li ul li {
   width: 100%;
 }
 
-nav ul li ul li {
-  left: 80px;
-
-}
 
 nav ul li:hover>ul {
   display: initial;
@@ -214,7 +211,7 @@ h1 {
   justify-content: center;
   background-color: #d8f8f6;
   margin-top: 60px;
-
+  flex-direction: column;
 
 
 }
@@ -266,6 +263,7 @@ h1 {
   box-shadow: 7px 7px 7px 7px #9295e7;
   display: flex;
   align-items: center;
+  flex-direction: column;
 
 }
 
@@ -409,4 +407,12 @@ h1 {
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+@media (max-width: 1000px){
+  header{
+    
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
